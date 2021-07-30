@@ -1,4 +1,4 @@
-import LinkedList from '../linked-list/LinkedListNode';
+import LinkedList from '../linked-list/LinkedList';
 
 export class Queue {
   constructor() {
