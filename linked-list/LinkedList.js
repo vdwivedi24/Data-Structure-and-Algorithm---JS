@@ -2,9 +2,7 @@ import LinkedListNode from './LinkedListNode';
 
 export default class LinkedList {
   constructor() {
-   
     this.head = null;
-
     this.tail = null;
   }
 
@@ -17,19 +15,15 @@ export default class LinkedList {
     if (!this.tail) {
       this.tail = newNode;
     }
-
     return this;
   }
 
-  
   append(value) {
     const newNode = new LinkedListNode(value);
-
     // If there is no head yet let's make new node a head.
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
-
       return this;
     }
     // Set the next property of the current tail to the new node
